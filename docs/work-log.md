@@ -9,4 +9,3 @@
 
 - Created the Vite + React + TypeScript project with Tailwind CSS and Motion.
 - Pushed the initial commit to GitHub.
-[text](../../../Users/dhuha/ha/Downloads/StudyHive_Project_Plan.md)
