@@ -8,4 +8,8 @@
 ## 2026-11-20
 
 - Created the Vite + React + TypeScript project with Tailwind CSS and Motion.
-- Pushed the initial commit to GitHub.
+- Fixed an npm network issue and moved the project outside OneDrive to `C:\Projects`.
+- Pushed the project to GitHub after correcting the remote URL.
+- Added the project plan and this work log to the `docs` folder.
+- Defined design tokens (colors, font, radius), a focus style and reduced-motion rules in `index.css`, based on estimated values from the reference screenshots.
+- Added the decision log.
