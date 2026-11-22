@@ -13,3 +13,9 @@
 - Added the project plan and this work log to the `docs` folder.
 - Defined design tokens (colors, font, radius), a focus style and reduced-motion rules in `index.css`, based on estimated values from the reference screenshots.
 - Added the decision log.
+
+## 2026-11-21
+
+- Built the Navbar (desktop links and animated mobile menu) and the Hero section.
+- Added a reusable Button, an email form with validation states, and shared Framer Motion variants.
+- Fixed editor errors (TypeScript server cache) and silenced the Tailwind `@theme` lint warning.
