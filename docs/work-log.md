@@ -23,3 +23,7 @@
 - Moved all copy to src/data/content.ts and added a reusable SectionHeading component.
 - Built the Pricing section with a monthly/yearly toggle and three plans.
 - Added an outline variant to the shared Button component.
+## 2026-11-22
+
+- Replaced the watermarked hero photo with a freely licensed image.
+- Built the Testimonials section (3 sample quotes) and the FAQ accordion (5 questions).

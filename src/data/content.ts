@@ -123,3 +123,63 @@ export const plans: Plan[] = [
     cta: "Get Early Access",
   },
 ];
+
+export type Testimonial = {
+  quote: string;
+  name: string;
+  role: string;
+};
+
+export type Faq = {
+  question: string;
+  answer: string;
+};
+
+export const testimonials: Testimonial[] = [
+  {
+    quote:
+      "Our group chat used to be chaos. Now notes, deadlines and revision plans all live in one Hive.",
+    name: "Sara M.",
+    role: "Computer Science, Year 3",
+  },
+  {
+    quote:
+      "The shared flashcards helped us revise for finals together, even when half of us were at home.",
+    name: "Omar K.",
+    role: "Pharmacy student",
+  },
+  {
+    quote:
+      "Seeing our group’s progress kept everyone motivated. We actually finished the syllabus on time.",
+    name: "Noor A.",
+    role: "Engineering, Year 2",
+  },
+];
+
+export const faqs: Faq[] = [
+  {
+    question: "What is StudyHive?",
+    answer:
+      "StudyHive is a workspace for study groups. You can chat, share notes, schedule sessions, make flashcards and track progress together.",
+  },
+  {
+    question: "Is StudyHive free to use?",
+    answer:
+      "Yes. The Free plan includes up to 3 study rooms, shared notes, basic progress tracking and a focus timer. Paid plans add more features.",
+  },
+  {
+    question: "How many people can join a Hive?",
+    answer:
+      "Free and Pro plans are designed for study groups of friends and classmates. The Team plan supports up to 50 members for clubs and classes.",
+  },
+  {
+    question: "Do I need to install anything?",
+    answer:
+      "No. StudyHive runs in your browser on a laptop, tablet or phone, so you can join a session from anywhere.",
+  },
+  {
+    question: "When can I get access?",
+    answer:
+      "StudyHive is in early access. Add your email in the form at the top of the page and we will let you know when your spot is ready.",
+  },
+];
