@@ -6,6 +6,8 @@ import HowItWorks from "./components/HowItWorks";
 import Pricing from "./components/Pricing";
 import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
+import FinalCTA from "./components/FinalCTA";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -24,7 +26,9 @@ export default function App() {
         <Pricing />
         <Testimonials />
         <FAQ />
+        <FinalCTA />
       </main>
+      <Footer />
     </MotionConfig>
   );
 }
