@@ -66,3 +66,60 @@ export const steps: Step[] = [
       "Study together, check off topics and watch your group’s progress grow.",
   },
 ];
+
+export type Plan = {
+  name: string;
+  description: string;
+  /** Price per month when billed monthly (USD) */
+  monthly: number;
+  /** Price per month when billed yearly (USD) */
+  yearly: number;
+  features: string[];
+  cta: string;
+  highlighted?: boolean;
+};
+
+export const plans: Plan[] = [
+  {
+    name: "Free",
+    description: "For trying StudyHive with a small group.",
+    monthly: 0,
+    yearly: 0,
+    features: [
+      "Up to 3 study rooms",
+      "Shared notes",
+      "Basic progress tracking",
+      "Focus timer",
+    ],
+    cta: "Start for free",
+  },
+  {
+    name: "Pro",
+    description: "For students who study together every week.",
+    monthly: 8,
+    yearly: 6,
+    features: [
+      "Everything in Free",
+      "Unlimited study rooms",
+      "Flashcards with spaced review",
+      "Session scheduling and reminders",
+      "Detailed progress insights",
+    ],
+    cta: "Get Early Access",
+    highlighted: true,
+  },
+  {
+    name: "Team",
+    description: "For clubs, classes and study societies.",
+    monthly: 20,
+    yearly: 15,
+    features: [
+      "Everything in Pro",
+      "Up to 50 members",
+      "Shared resource library",
+      "Admin controls",
+      "Priority support",
+    ],
+    cta: "Get Early Access",
+  },
+];

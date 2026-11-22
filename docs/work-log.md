@@ -21,3 +21,5 @@
 - Fixed editor errors (TypeScript server cache) and silenced the Tailwind `@theme` lint warning.
 - Built the Features section (6 cards) and the How it works section (3 steps).
 - Moved all copy to src/data/content.ts and added a reusable SectionHeading component.
+- Built the Pricing section with a monthly/yearly toggle and three plans.
+- Added an outline variant to the shared Button component.

@@ -5,22 +5,30 @@ type ButtonProps = {
   children: ReactNode;
   href?: string;
   type?: "button" | "submit";
+  variant?: "primary" | "outline";
   disabled?: boolean;
   onClick?: () => void;
   className?: string;
 };
 
 const base =
-  "inline-flex items-center justify-center rounded-control bg-brand text-sm font-medium text-white transition-colors hover:bg-[#6d75ee] disabled:cursor-not-allowed disabled:opacity-70";
+  "inline-flex items-center justify-center rounded-control text-sm font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-70";
+
+const variants = {
+  primary: "bg-brand text-white hover:bg-[#6d75ee]",
+  outline: "border border-white/30 text-white hover:bg-white/10",
+};
 
 export default function Button({
   children,
   href,
   type = "button",
+  variant = "primary",
   disabled = false,
   onClick,
   className = "",
 }: ButtonProps) {
+  const classes = `${base} ${variants[variant]} ${className}`;
   const motionProps = disabled
     ? {}
     : { whileHover: { scale: 1.03 }, whileTap: { scale: 0.97 } };
@@ -30,7 +38,7 @@ export default function Button({
       <motion.a
         href={href}
         onClick={onClick}
-        className={`${base} ${className}`}
+        className={classes}
         {...motionProps}
       >
         {children}
@@ -43,7 +51,7 @@ export default function Button({
       type={type}
       disabled={disabled}
       onClick={onClick}
-      className={`${base} ${className}`}
+      className={classes}
       {...motionProps}
     >
       {children}
