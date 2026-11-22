@@ -1,6 +1,8 @@
-import { MotionConfig } from 'motion/react'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
+import { MotionConfig } from "motion/react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Features from "./components/Features";
+import HowItWorks from "./components/HowItWorks";
 
 export default function App() {
   return (
@@ -14,7 +16,9 @@ export default function App() {
       <Navbar />
       <main id="main">
         <Hero />
+        <Features />
+        <HowItWorks />
       </main>
     </MotionConfig>
-  )
+  );
 }

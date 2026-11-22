@@ -19,3 +19,5 @@
 - Built the Navbar (desktop links and animated mobile menu) and the Hero section.
 - Added a reusable Button, an email form with validation states, and shared Framer Motion variants.
 - Fixed editor errors (TypeScript server cache) and silenced the Tailwind `@theme` lint warning.
+- Built the Features section (6 cards) and the How it works section (3 steps).
+- Moved all copy to src/data/content.ts and added a reusable SectionHeading component.
