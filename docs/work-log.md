@@ -30,3 +30,11 @@
 - Built the Testimonials section (3 sample quotes) and the FAQ accordion (5 questions).
 - Built the Final CTA and Footer sections, completing all page sections.
 - Added a light variant to the shared Button component.
+
+## 2026-11-23: Design values measured from Figma export
+
+- **Context:** The first version used values estimated from small screenshots.
+- **Decision:** Measured the 1440×800 Figma export and my own screenshot, then adjusted container width (1206px), heading (50px/64px, semibold), form sizes (298×46 and 233×46), navbar spacing, colors and overlay gradient.
+- **Result:** Layout matches the reference within about 1–3px; the hero photo differs intentionally.
+- Measured the Figma export and the implementation at 1440×800 and corrected container width, heading, form sizes, navbar spacing, colors and overlay.
+- Desktop layout now matches the reference within 1–2 px (see docs/design-comparison/desktop-comparison.md).

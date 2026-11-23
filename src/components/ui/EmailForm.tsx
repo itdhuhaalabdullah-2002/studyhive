@@ -37,9 +37,9 @@ export default function EmailForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} noValidate>
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:gap-5">
-        <div className="relative sm:w-[290px]">
+    <form onSubmit={handleSubmit} noValidate className="relative">
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:gap-4">
+        <div className="relative sm:w-[298px]">
           <label htmlFor="email" className="sr-only">
             Email address
           </label>
@@ -58,7 +58,7 @@ export default function EmailForm() {
             disabled={isSubmitting}
             aria-invalid={isError}
             aria-describedby="email-feedback"
-            className={`h-[44px] w-full rounded-control bg-field pl-4 pr-11 text-sm text-night placeholder:text-[#4a4fb8] ${
+            className={`h-[46px] w-full rounded-control bg-field pl-4 pr-11 text-sm text-night placeholder:text-[#4a4fb8] ${
               isError ? "ring-2 ring-[#ff8a8a]" : ""
             }`}
           />
@@ -70,7 +70,7 @@ export default function EmailForm() {
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="pointer-events-none absolute right-3 top-1/2 size-5 -translate-y-1/2 text-brand"
+            className="pointer-events-none absolute right-[18px] top-1/2 size-5 -translate-y-1/2 text-brand"
           >
             <path d="M5 12h14M13 6l6 6-6 6" />
           </svg>
@@ -79,7 +79,7 @@ export default function EmailForm() {
         <Button
           type="submit"
           disabled={isSubmitting}
-          className="h-[44px] w-full sm:w-[230px]"
+          className="h-[46px] w-full text-lg! font-normal! sm:w-[233px]"
         >
           {isSubmitting ? "Sending…" : "Get Early Access"}
         </Button>
@@ -88,7 +88,7 @@ export default function EmailForm() {
       <div
         id="email-feedback"
         aria-live="polite"
-        className="mt-3 min-h-6 text-sm"
+        className="absolute inset-x-0 top-full mt-3 text-sm"
       >
         {isError && <p className="text-[#ffb3b3]">{error}</p>}
         {status === "success" && (

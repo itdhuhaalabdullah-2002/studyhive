@@ -10,7 +10,7 @@ export default function Testimonials() {
       aria-labelledby="testimonials-title"
       className="scroll-mt-4 bg-night-deep py-20 md:py-28"
     >
-      <div className="mx-auto max-w-[1152px] px-6">
+      <div className="mx-auto max-w-[1206px] px-6">
         <SectionHeading
           id="testimonials-title"
           eyebrow="Testimonials"

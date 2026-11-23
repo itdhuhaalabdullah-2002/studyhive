@@ -31,16 +31,23 @@ export default function Navbar() {
 
   return (
     <header className="absolute inset-x-0 top-0 z-30">
-      <div className="mx-auto flex max-w-[1152px] items-center justify-between px-6 py-8 md:py-16">
+      <div className="mx-auto flex max-w-[1206px] items-center justify-between px-6 py-8 md:py-[42px]">
         <Logo />
 
-        <nav aria-label="Main" className="hidden items-center gap-10 md:flex">
+        <nav
+          aria-label="Main"
+          className="hidden items-center gap-[60px] md:flex"
+        >
           {links.map((link) => (
             <a key={link.label} href={link.href} className={linkClass}>
               {link.label}
             </a>
           ))}
-          <Button href="#early-access" className="h-12 w-[183px] bg-brand/70">
+          <Button
+            href="#early-access"
+            variant="muted"
+            className="h-12 w-[184px] text-[17px]!"
+          >
             Get Access
           </Button>
         </nav>

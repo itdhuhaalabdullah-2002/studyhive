@@ -11,7 +11,7 @@ const links = [
 export default function Footer() {
   return (
     <footer className="border-t border-white/10 bg-night-deep">
-      <div className="mx-auto max-w-[1152px] px-6 py-14">
+      <div className="mx-auto max-w-[1206px] px-6 py-14">
         <div className="flex flex-col gap-10 md:flex-row md:justify-between">
           <div className="max-w-[320px]">
             <Logo />

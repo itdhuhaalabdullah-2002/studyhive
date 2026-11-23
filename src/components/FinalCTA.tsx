@@ -13,7 +13,7 @@ export default function FinalCTA() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.4 }}
-        className="mx-auto max-w-[1152px] rounded-2xl bg-linear-to-br from-brand to-[#3b3f9e] px-6 py-14 text-center md:py-20"
+        className="mx-auto max-w-[1206px] rounded-2xl bg-linear-to-br from-brand to-[#3b3f9e] px-6 py-14 text-center md:py-20"
       >
         <h2
           id="cta-title"

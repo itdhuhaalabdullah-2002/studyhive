@@ -5,7 +5,7 @@ type ButtonProps = {
   children: ReactNode;
   href?: string;
   type?: "button" | "submit";
-  variant?: "primary" | "outline" | "light";
+  variant?: "primary" | "outline" | "light" | "muted";
   disabled?: boolean;
   onClick?: () => void;
   className?: string;
@@ -18,6 +18,7 @@ const variants = {
   primary: "bg-brand text-white hover:bg-[#6d75ee]",
   outline: "border border-white/30 text-white hover:bg-white/10",
   light: "bg-white text-night hover:bg-white/90",
+  muted: "bg-[#515189] text-white hover:bg-[#5f5f9e]",
 };
 
 export default function Button({
