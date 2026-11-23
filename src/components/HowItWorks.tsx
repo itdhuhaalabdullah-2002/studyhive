@@ -10,7 +10,7 @@ export default function HowItWorks() {
       aria-labelledby="how-title"
       className="scroll-mt-4 bg-night-deep py-20 md:py-28"
     >
-      <div className="mx-auto max-w-[1206px] px-6">
+      <div className="mx-auto max-w-[1206px] px-[30px] md:px-6">
         <SectionHeading
           id="how-title"
           eyebrow="How it works"

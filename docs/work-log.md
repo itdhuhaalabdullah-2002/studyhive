@@ -38,3 +38,5 @@
 - **Result:** Layout matches the reference within about 1–3px; the hero photo differs intentionally.
 - Measured the Figma export and the implementation at 1440×800 and corrected container width, heading, form sizes, navbar spacing, colors and overlay.
 - Desktop layout now matches the reference within 1–2 px (see docs/design-comparison/desktop-comparison.md).
+- Measured the Figma mobile frame (320×780) and matched side padding, heading, subtext, form, menu icon and logo within 1–3 px.
+- Checked the page at 320 px: no horizontal scrolling and all sections stack in one column.

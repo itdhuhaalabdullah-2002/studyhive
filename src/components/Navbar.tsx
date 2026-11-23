@@ -31,7 +31,7 @@ export default function Navbar() {
 
   return (
     <header className="absolute inset-x-0 top-0 z-30">
-      <div className="mx-auto flex max-w-[1206px] items-center justify-between px-6 py-8 md:py-[42px]">
+      <div className="mx-auto flex max-w-[1206px] items-center justify-between px-[30px] py-[45px] md:px-6 md:py-[42px]">
         <Logo />
 
         <nav
@@ -55,7 +55,7 @@ export default function Navbar() {
         <button
           ref={menuButtonRef}
           type="button"
-          className="rounded-control p-2 md:hidden"
+          className="-mr-1 -mt-1 self-start rounded-control p-1 md:hidden"
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label={open ? "Close menu" : "Open menu"}
@@ -67,7 +67,7 @@ export default function Navbar() {
             stroke="currentColor"
             strokeWidth="2"
             strokeLinecap="round"
-            className="size-7"
+            className="size-6"
             aria-hidden="true"
           >
             {open ? (

@@ -21,7 +21,7 @@ export default function Pricing() {
       aria-labelledby="pricing-title"
       className="scroll-mt-4 bg-night py-20 md:py-28"
     >
-      <div className="mx-auto max-w-[1206px] px-6">
+      <div className="mx-auto max-w-[1206px] px-[30px] md:px-6">
         <SectionHeading
           id="pricing-title"
           eyebrow="Pricing"

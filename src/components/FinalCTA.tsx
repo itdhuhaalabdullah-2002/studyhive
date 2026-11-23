@@ -6,7 +6,7 @@ export default function FinalCTA() {
   return (
     <section
       aria-labelledby="cta-title"
-      className="bg-night px-6 pb-20 md:pb-28"
+      className="bg-night px-[30px] pb-20 md:px-6 md:pb-28"
     >
       <motion.div
         variants={fadeUp}
