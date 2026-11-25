@@ -2,10 +2,10 @@ export default function Logo() {
   return (
     <a
       href="#"
-      className="flex items-center gap-2.5 md:gap-3"
+      className="flex items-center gap-2.5 xl:gap-3"
       aria-label="StudyHive home"
     >
-      <svg viewBox="0 0 32 32" className="size-9 md:size-11" aria-hidden="true">
+      <svg viewBox="0 0 32 32" className="size-9 xl:size-11" aria-hidden="true">
         <path
           d="M16 2.5 27.7 9.25v13.5L16 29.5 4.3 22.75V9.25L16 2.5Z"
           className="fill-brand"
@@ -16,7 +16,7 @@ export default function Logo() {
         />
         <circle cx="16" cy="16" r="2.2" className="fill-brand-light" />
       </svg>
-      <span className="text-[34px] font-semibold leading-none tracking-tight md:text-5xl">
+      <span className="text-[34px] font-semibold leading-none tracking-tight xl:text-5xl">
         studyhive<span className="text-brand-light">.</span>
       </span>
     </a>

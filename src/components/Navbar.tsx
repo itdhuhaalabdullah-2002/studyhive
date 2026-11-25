@@ -36,7 +36,7 @@ export default function Navbar() {
 
         <nav
           aria-label="Main"
-          className="hidden items-center gap-[60px] md:flex"
+          className="hidden items-center gap-8 lg:flex xl:gap-[60px]"
         >
           {links.map((link) => (
             <a key={link.label} href={link.href} className={linkClass}>
@@ -55,7 +55,7 @@ export default function Navbar() {
         <button
           ref={menuButtonRef}
           type="button"
-          className="-mr-1 -mt-1 self-start rounded-control p-1 md:hidden"
+          className="-mr-1 -mt-1 self-start rounded-control p-1 lg:hidden"
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label={open ? "Close menu" : "Open menu"}
@@ -88,7 +88,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -12 }}
             transition={{ duration: 0.2 }}
-            className="absolute inset-x-4 top-full flex flex-col gap-5 rounded-lg bg-night-deep p-6 shadow-2xl md:hidden"
+            className="absolute inset-x-4 top-full flex flex-col gap-5 rounded-lg bg-night-deep p-6 shadow-2xl lg:hidden"
           >
             {links.map((link) => (
               <a

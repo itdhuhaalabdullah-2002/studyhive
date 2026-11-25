@@ -18,11 +18,11 @@ export default function Hero() {
           height={1080}
           fetchPriority="high"
           decoding="async"
-          className="absolute inset-0 -z-20 h-full w-full object-cover object-center md:object-[70%_center]"
+          className="absolute inset-0 -z-20 h-full w-full object-cover object-top md:object-[20%_center] xl:object-[70%_center]"
         />
       </picture>
       <div className="absolute inset-0 -z-10 bg-linear-to-t from-night via-night/80 to-night/20 md:hidden" />
-      <div className="absolute inset-0 -z-10 hidden bg-linear-to-r from-night from-27% to-transparent to-60% md:block" />
+      <div className="absolute inset-0 -z-10 hidden bg-linear-to-r from-night from-40% to-transparent to-85% md:block xl:from-27% xl:to-60%" />
 
       <motion.div
         variants={stagger}
