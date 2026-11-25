@@ -5,14 +5,22 @@ import { fadeUp, stagger } from "../lib/animations";
 export default function Hero() {
   return (
     <section className="relative isolate flex min-h-[780px] items-end overflow-hidden bg-night pb-[88px] pt-40 md:min-h-[800px] md:items-center md:pb-0 md:pt-[6px]">
-      <motion.img
-        src={`${import.meta.env.BASE_URL}images/hero.jpg`}
-        alt=""
-        initial={{ opacity: 0, scale: 1.05 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1.2, ease: "easeOut" }}
-        className="absolute inset-0 -z-20 h-full w-full object-cover object-[70%_center]"
-      />
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          srcSet={`${import.meta.env.BASE_URL}images/hero-mobile.webp`}
+          type="image/webp"
+        />
+        <img
+          src={`${import.meta.env.BASE_URL}images/hero.webp`}
+          alt=""
+          width={1920}
+          height={1080}
+          fetchPriority="high"
+          decoding="async"
+          className="absolute inset-0 -z-20 h-full w-full object-cover object-center md:object-[70%_center]"
+        />
+      </picture>
       <div className="absolute inset-0 -z-10 bg-linear-to-t from-night via-night/80 to-night/20 md:hidden" />
       <div className="absolute inset-0 -z-10 hidden bg-linear-to-r from-night from-27% to-transparent to-60% md:block" />
 

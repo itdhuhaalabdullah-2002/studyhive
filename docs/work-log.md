@@ -40,3 +40,5 @@
 - Desktop layout now matches the reference within 1–2 px (see docs/design-comparison/desktop-comparison.md).
 - Measured the Figma mobile frame (320×780) and matched side padding, heading, subtext, form, menu icon and logo within 1–3 px.
 - Checked the page at 320 px: no horizontal scrolling and all sections stack in one column.
+- Ran Lighthouse (mobile 44, desktop 65 performance; 100 accessibility and best practices; 91 SEO).
+- Found a 14 MB hero image as the main bottleneck; compressed it to WebP in two sizes, self-hosted the Lexend font and added a meta description.
